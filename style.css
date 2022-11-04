@@ -19,7 +19,7 @@
 
 body {
     color: var(--dark);
-    /* background: var(--white); */
+    background: var(--white);
 }
 
 body .circle {
