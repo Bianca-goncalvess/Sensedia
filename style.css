@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/*Seletor universal*/
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +10,13 @@
     text-decoration: none;
 }
 
+/*Me permite chamar uma variavel dentro do css*/
 :root {
     --yellow: #EF9443;
     --white: #fff;
     --blue: #160085;
     --ame: #DC0055;
-    
+
 }
 
 body {
@@ -30,6 +32,8 @@ body .circle {
     height: 100%;
     background: var(--ame);
     clip-path: circle(50% at bottom right);
+    z-index: -2;
+
 }
 
 .navigation {
@@ -41,15 +45,17 @@ body .circle {
     width: 100%;
     background: var(--ame);
     transition: all 0.5s;
-    z-index: index;
+   
 }
 
+/*Garantir o alinhamento horizontal*/
 .navigation ul {
     display: flex;
     align-items: center;
     gap: 5rem;
 }
 
+/*edição das opções do menu*/
 .navigation ul li a {
     color: var(--white);
     font-size: 17px;
@@ -57,20 +63,19 @@ body .circle {
     transition: all 0.5s;
 }
 
+/*Mudar a cor ao passar o mouse*/
 .navigation ul li a:hover {
     color: var(--yellow);
 }
 
-.navigation i {
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-
+/*Cursor menu*/
 .menu {
     cursor: pointer;
     display: none;
+    /*esta escondendo o menu bar*/
 }
 
+/*Opção domenu responsivo*/
 .menu .bar {
     display: block;
     width: 30px;
@@ -78,9 +83,10 @@ body .circle {
     border-radius: 3px;
     background: var(--yellow);
     margin: 5px auto;
-    transition: all 0.3s;
+    transition: all 0.3s; 
 }
 
+/*Hero banner: organização do posicionamento*/
 .home {
     width: 100%;
     height: 100vh;
@@ -90,26 +96,31 @@ body .circle {
     padding: 0px 10%;
 }
 
+/*Para que o texto respeite uma largura maxima*/
 .home-text {
     max-width: 37rem;
 }
 
+/*Edição de aparencia do texto*/
 .home-text .text-h4 {
     font-size: 1.5rem;
     color: var(--ame);
     margin-bottom: 1rem;
 }
 
+/*Edição de aparencia do texto*/
 .home-text .text-h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
     line-height: 4rem;
 }
 
+/*Edição de aparencia do texto*/
 .home-text p {
     margin-bottom: 4rem;
 }
 
+/*Edição de botão do hero banner*/
 .home-btn {
     padding: 15px 45px;
     background: var(--ame);
@@ -119,27 +130,23 @@ body .circle {
     transition: all 0.5s;
 }
 
+/*Mudar a cor do botão ao passar mouse por cima*/
 .home-btn:hover {
     color: var(--white);
     background: var(--blue);
 }
 
+/*Posicionamentode img*/
 .home-img {
     position: absolute;
     right: -200px;
     bottom: -40px;
-
+    z-index: -1;
 }
 
+/*Tamanho da img*/
 .home-img img {
     width: 90%;
-}
-
-.container .text h2 {
-    font-size: 2.5em;
-    color: #ED0059;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .d-block {
@@ -147,3 +154,5 @@ body .circle {
     width: 100%;
     height: 558px;
 }
+
+
