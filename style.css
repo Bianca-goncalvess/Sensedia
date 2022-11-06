@@ -16,12 +16,13 @@
     --white: #fff;
     --blue: #160085;
     --ame: #ED0059;
+    --fundo: #EDEDED;
 
 }
 
 body {
     color: var(--dark);
-    background: var(--white);
+    background: var(--fundo);
 }
 
 body .circle {
@@ -45,7 +46,7 @@ body .circle {
     width: 100%;
     background: var(--ame);
     transition: all 0.5s;
-    
+
 
 }
 
@@ -54,7 +55,7 @@ body .circle {
     display: flex;
     align-items: center;
     gap: 5rem;
-    
+
 }
 
 /*edição das opções do menu*/
@@ -102,7 +103,7 @@ body .circle {
 /*Para que o texto respeite uma largura maxima*/
 .home-text {
     max-width: 37rem;
-    
+
 }
 
 /*Edição de aparencia do texto*/
@@ -144,46 +145,47 @@ body .circle {
 /*Posicionamentode img*/
 .home-img {
     position: absolute;
-    right: -200px;
+    right: 0px;
     bottom: -40px;
     z-index: -1;
 }
 
 /*Tamanho da img*/
 .home-img img {
-    width: 90%;
+    max-width: 100%;
 }
 
 
 .marketing {
-  background: #EDEDED;
-  height: 500px;
-  margin: -100px 0px -15px;
-  padding: 100px;
-  
+    height: 500px;
+    margin: -100px 0px -15px;
+    padding: 100px;
+
 }
 
-.marketing img{
+.marketing img {
     max-width: 100%;
     /* clip-path: circle(110% at left and right ); */
     display: block;
-  }
+}
+
 .marketing .section-title {
     padding-bottom: 22px;
-  }
-  .marketing h3 {
+}
+
+.marketing h3 {
     margin-top: 0px;
 }
 
 .marketing .about-thumb {
     padding-top: 10px;
-  }
+}
 
-  .marketing p {
+.marketing p {
     margin-bottom: 3rem;
 }
 
-  .marketing-btn{
+.marketing-btn {
     padding: 15px 45px;
     background: var(--ame);
     color: var(--white);
@@ -192,19 +194,19 @@ body .circle {
     transition: all 0.5s;
 }
 
-.marketing-btn:hover{
+.marketing-btn:hover {
     color: var(--white);
     background: var(--blue);
     text-decoration: none;
 }
 
-  .svgcolor-light > path {
-    fill: #f0eded;
-    stroke: #f0eded;
+.svgcolor-light>path {
+    fill: var(--fundo);
+    stroke: var(--fundo);
     stroke-width: 0;
 }
 
-.svgcolor2 > path {
+.svgcolor2>path {
     fill: var(--ame);
     stroke: var(--ame);
     stroke-width: 0;
@@ -213,7 +215,7 @@ body .circle {
 #feature {
     height: 650px;
     background: var(--ame);
-  }
+}
 
 .d-block {
     object-fit: cover;
@@ -221,6 +223,50 @@ body .circle {
     height: 380px;
     margin-bottom: 20px;
 }
+
+
+#work {
+    padding: 100px;
+   
+}
+#work .container {
+	width: 100vh;
+	grid-gap: 20px;
+
+}
+#work .title {
+	padding: 100px 60px 60px 60px;
+}
+#work .bg-black {
+	background-color: var(--blue);
+	color: #ffffff;
+}
+#work .bg-red {
+	background-color: var(--ame);
+	color: #ffffff;
+}
+#work h3 {
+	padding-bottom: 60px;
+}
+#work .fa {
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 40px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	transition: all 0.4s ease-in-out;
+	margin-top: 40px;
+}
+#work .fa:hover {
+	background-color: #ffffff;
+	border-radius: 50%;
+	color: #303030;
+}
+
+
+
 
 footer {
     background-color: #313647;
@@ -338,5 +384,3 @@ footer-col .medias-socias {
     background-color: white;
     margin-bottom: -10rem;
 }
-
-  
