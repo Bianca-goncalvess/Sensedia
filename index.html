@@ -29,6 +29,7 @@
 <body>
 
     <header>
+        <!--Menu de navegação-->
         <nav class="navigation">
             <a href="#" class="logo"><img src="/img/logo.png" alt=""></a>
             <ul class="nav-menu">
@@ -37,6 +38,7 @@
                 <li class="nav-item"><a href="#">Entrar</a></li>
                 <li class="nav-item"><a href="#">Cadastrar</a></li>
             </ul>
+            <!--Side Bar para versão mobile-->
             <div class="menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -46,7 +48,7 @@
     </header>
 
     <main>
-
+        <!--Banner Hero do Home-->
         <section class="home">
             <div class="circle"></div>
             <div class="home-text">
@@ -54,18 +56,18 @@
                 <h1 class="text-h1">PORTAL DO DESENVOLVEDOR</h1>
                 <p>Tecnologia e segurança para você inovar, conheça nossas APIs e implemente as soluões de maneira
                     rápida e fácil. </p>
-                <a href="#feature" class="home-btn">Saiba mais sobre nossas APIs</a>
+                <a href="#feature" class="home-btn">Nossas Soluções</a>
             </div>
             <div class="home-img">
                 <img src="/img/mulher-sorrindo.png" alt="mulher sorrindo">
             </div>
         </section>
-
+        <!--Chamada para ação-->
         <section class="marketing">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
-                        <img src="/img/homem3.png" class="img-responsive wow fadeInUp" alt="About">
+                        <img src="/img/homem3.jpg" class="img-responsive wow fadeInUp" alt="About">
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="about-thumb">
@@ -78,15 +80,16 @@
                                     utiliza alguma delas, é só entrar em contato com o responsável pela sua integração e
                                     solicitar a integração.</p>
                             </div>
-                            <a href="#" class="marketing-btn">Cadastrar</a>
+                            <div class="containerBtn">
+                                <a href="#" class="marketing-btn">Cadastrar</a>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
-
-        <section id="feature">
+        <!--Carousel apresentando as três principais APIs-->
+        <section class="car">
             <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="100" width="100%" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
                 <path d="M0 0 L50 100 L100 0 Z"></path>
@@ -115,73 +118,43 @@
             </div>
 
         </section>
-
-        <section id="work">
-
-            <!-- <div class="container">
+        <!--Cards com vantagens do portal-->
+        <section id="feature" class="work">
+            <div class=" .container-fluid ">
                 <div class="row">
                     <div class="col-md-4 col-sm-4 title">
-                        <h2>Service</h2>
+                        <h2>Conheça as vantagens de usar nosso portal</h2>
                         <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
-                      </div>
-                    
-                    <div class="col-md-4 col-sm-6 bg-black"> <i class="fa fa-mobile"></i>
-                        <h3>Mobile UX</h3>
-                      </div>
-                      <div class="col-md-4 col-sm-6 bg-red"> <i class="fa fa-cloud"></i>
-                        <h3>Social media</h3>
-                      </div>
-                  <div class="col-md-6 col-sm-6 bg-red"> <i class="fa fa-link"></i>
-                    <h3>Web Design</h3>
-                  </div>
-                  <div class="col-md-6 col-sm-6 bg-black"> <i class="fa fa-globe"></i>
-                    <h3>SEO</h3>
-                  </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 bg-ame"> <i class="fa fa-hourglass-2"></i>
+                        <h3>Agilidade no desenvolvimento</h3>
+                        <p>Conheça nossas ferramentas, você implementa a solução de maneira rápida e fácil.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 bg-secundario"> <i class="fa fa-gear"></i>
+                        <h3>Área de testes</h3>
+                        <p>Teste as APIs de forma simples no nosso sandbox</p>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-md-4 col-sm-6 bg-ame"> <i class="fa fa-user"></i>
+                        <h3>Cadastro Rápido</h3>
+                        <p>É só informar o nome e e-mail para acessar todas as ferramentas</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 bg-secundario"> <i class="fa fa-money"></i>
+                        <h3>Serviço Gratuito</h3>
+                        <p>Você não paga nada para acessar APIs e documentações.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 bg-ame"> <i class="fa fa-keyboard-o"></i>
+                        <h3>Informações em um só lugar</h3>
+                        <p>Você encontra todo o material técnico para integrar nossas APIs.</p>
+                    </div>
                 </div>
-              </div> -->
-         
-
-            <div class=" .container-fluid ">
-              <div class="row">
-                <div class="col-md-4 col-sm-4 title">
-                  <h2>Conheça as vantagens de usar nosso portal</h2>
-                  <hr>
-                </div>
-             
-                  <div class="col-md-4 col-sm-6 bg-black"> <i class="fa fa-hourglass-2"></i>
-                    <h3>Agilidade no desenvolvimento</h3>
-                    <p>Conheça nossas ferramentas, você implementa a solução de maneira rápida e fácil.</p>
-                  </div>
-                  <div class="col-md-4 col-sm-6 bg-red"> <i class="fa fa-gear"></i>
-                    <h3>Área de testes</h3>
-                    <p>Teste as APIs de forma simples no nosso sandbox</p>
-                  </div>
-                  <div class="w-100"></div>
-                  <div class="col-md-4 col-sm-6 bg-black"> <i class="fa fa-user"></i>
-                    <h3>Cadastro Rápido</h3>
-                    <p>É só informar o nome e e-mail para acessar todas as ferramentas</p>
-                  </div>
-                  <div class="col-md-4 col-sm-6 bg-red"> <i class="fa fa-money"></i>
-                    <h3>Serviço Gratuito</h3>
-                    <p>Você não paga nada para acessar APIs e documentações.</p>
-                  </div>
-                  <div class="col-md-4 col-sm-6 bg-black"> <i class="fa fa-keyboard-o"></i>
-                    <h3>Informações em um só lugar</h3>
-                    <p>Você encontra todo o material técnico para integrar nossas APIs.</p>
-                  </div>
-                </div>
-              </div>
-
-
-              
-           
-          </section>
+            </div>
 
 
 
+
+        </section>
     </main>
-
     <footer>
         <div class="container-footer">
             <img class="imgFooter" src="/img/logo.png" alt="">
@@ -220,7 +193,7 @@
                 <!-- final col-->
                 <div class="footer-col">
                     <h4>Siga nossas Redes Sociais</h4>
-                    <div class="medias-socias">
+                    <div class="midias-socias">
                         <a href="#"> <i class="fa fa-facebook"></i> </a>
                         <a href="#"> <i class="fa fa-instagram"></i> </a>
                         <a href="#"> <i class="fa fa-twitter"></i> </a>
